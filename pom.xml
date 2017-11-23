@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.cvnavi.javacv</groupId>
+    <artifactId>javacv-cvnavi-demo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.bytedeco/javacv -->
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacv</artifactId>
+            <version>1.3.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.bytedeco/javacpp -->
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacpp</artifactId>
+            <version>1.3.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.bytedeco/javacv-platform -->
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacv-platform</artifactId>
+            <version>1.3.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.bytedeco.javacpp-presets/opencv -->
+        <dependency>
+            <groupId>org.bytedeco.javacpp-presets</groupId>
+            <artifactId>opencv</artifactId>
+            <version>3.2.0-1.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.bytedeco.javacpp-presets/opencv-platform -->
+        <dependency>
+            <groupId>org.bytedeco.javacpp-presets</groupId>
+            <artifactId>opencv-platform</artifactId>
+            <version>3.2.0-1.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.bytedeco.javacpp-presets/ffmpeg -->
+        <dependency>
+            <groupId>org.bytedeco.javacpp-presets</groupId>
+            <artifactId>ffmpeg</artifactId>
+            <version>3.2.1-1.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.bytedeco.javacpp-presets/ffmpeg-platform -->
+        <dependency>
+            <groupId>org.bytedeco.javacpp-presets</groupId>
+            <artifactId>ffmpeg-platform</artifactId>
+            <version>3.2.1-1.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.github.hoary.ffmpeg/FFmpeg-windows-x86_64 -->
+        <dependency>
+            <groupId>com.github.hoary.ffmpeg</groupId>
+            <artifactId>FFmpeg-windows-x86_64</artifactId>
+            <version>2.0.1.1</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
