@@ -13,13 +13,13 @@ import org.bytedeco.javacv.OpenCVFrameConverter;
 import javax.swing.*;
 import java.awt.*;
 /**
- * @ClassName: RecordStreamPushTest
+ * @ClassName: CameraDataHandler
  * @Description: TODO(功能描述)
  * @author: pengjunlin
  * @company: 上海势航网络科技有限公司
  * @date 2017-11-23
  */
-public class RecordCameraDataMain {
+public class CameraDataHandler {
 
     /**
      * 按帧录制本机摄像头视频（边预览边录制，停止预览即停止录制）
