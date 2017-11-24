@@ -13,13 +13,13 @@ import org.bytedeco.javacv.OpenCVFrameConverter;
 import javax.swing.*;
 import java.awt.*;
 /**
- * @ClassName: CameraDataHandler
- * @Description: TODO(功能描述)
+ * @ClassName: CameraDataPushHandler
+ * @Description: TODO(视频保存或RTMP视频流推送:推流器实现，推本地摄像头视频到流媒体服务器以及摄像头录制视频功能实现(基于javaCV-FFMPEG、javaCV-openCV))
  * @author: pengjunlin
  * @company: 上海势航网络科技有限公司
  * @date 2017-11-23
  */
-public class CameraDataHandler {
+public class CameraDataPushHandler {
 
     /**
      * 按帧录制本机摄像头视频（边预览边录制，停止预览即停止录制）

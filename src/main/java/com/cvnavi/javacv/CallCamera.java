@@ -5,13 +5,13 @@ import org.bytedeco.javacv.OpenCVFrameGrabber;
 import sun.applet.Main;
 import javax.swing.*;
 /**
- * @ClassName: CallCameraTest
- * @Description: TODO(功能描述)
+ * @ClassName: CallCamera
+ * @Description: TODO(调用本机摄像头视频)
  * @author: pengjunlin
  * @company: 上海势航网络科技有限公司
  * @date 2017-11-23
  */
-public class CallCameraTest {
+public class CallCamera {
 
     /**
      * 测试JavaCV打开摄像头
