@@ -23,7 +23,7 @@ public class CallCameraTest {
         OpenCVFrameGrabber grabber = new OpenCVFrameGrabber(0);
         grabber.start();
         //开始获取摄像头数据
-        CanvasFrame canvas = new CanvasFrame("摄像头");
+        CanvasFrame canvas = new CanvasFrame("camera");
         //新建一个窗口
         canvas.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         canvas.setAlwaysOnTop(true);
