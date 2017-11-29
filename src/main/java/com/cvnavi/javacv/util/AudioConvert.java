@@ -148,7 +148,7 @@ public class AudioConvert {
         //pcm参数转换
         //convert("东部信息.wav", "eguid.wav", avcodec.AV_CODEC_ID_PCM_S16LE, 8000, 16000,1);
         //pcm转mp3编码示例
-        //convert("东部信息.wav", "eguid.mp3", avcodec.AV_CODEC_ID_MP3, 8000, 16,1);
+        //convert("C:\\1967.wav", "C:\\boonya.mp3", avcodec.AV_CODEC_ID_MP3, 8000, 1600,1);
         //FLV参数转换==本次研究方向
         convert("C:\\device-1001232032.h264", "C:\\device-1001232032.flv", avcodec.AV_CODEC_ID_FLV1, 8000, 16000,1);
     }

@@ -5,11 +5,9 @@ import org.bytedeco.javacpp.avcodec;
 import org.bytedeco.javacpp.opencv_core;
 import org.bytedeco.javacpp.opencv_objdetect;
 import org.bytedeco.javacpp.opencv_core.IplImage;
-import org.bytedeco.javacv.CanvasFrame;
+import org.bytedeco.javacv.*;
 import org.bytedeco.javacv.Frame;
-import org.bytedeco.javacv.FrameGrabber;
-import org.bytedeco.javacv.FrameRecorder;
-import org.bytedeco.javacv.OpenCVFrameConverter;
+
 import javax.swing.*;
 import java.awt.*;
 /**
@@ -33,7 +31,7 @@ public class CameraDataPushHandler {
      */
     public static void recordCamera(String outputFile, double frameRate)throws Exception, InterruptedException, org.bytedeco.javacv.FrameRecorder.Exception {
         Loader.load(opencv_objdetect.class);
-        FrameGrabber grabber = FrameGrabber.createDefault(0);//本机摄像头默认0，这里使用javacv的抓取器，至于使用的是ffmpeg还是opencv，请自行查看源码
+        OpenCVFrameGrabber grabber = new OpenCVFrameGrabber(0);//本机摄像头默认0，这里使用javacv的抓取器，至于使用的是ffmpeg还是opencv，请自行查看源码
         grabber.start();//开启抓取器
 
         OpenCVFrameConverter.ToIplImage converter = new OpenCVFrameConverter.ToIplImage();//转换器
@@ -41,7 +39,7 @@ public class CameraDataPushHandler {
         int width = grabbedImage.width();
         int height = grabbedImage.height();
 
-        FrameRecorder recorder = FrameRecorder.createDefault(outputFile, width, height);
+        OpenCVFrameRecorder recorder = OpenCVFrameRecorder.createDefault(outputFile, width, height);
         recorder.setVideoCodec(avcodec.AV_CODEC_ID_H264); // avcodec.AV_CODEC_ID_H264，编码
         recorder.setFormat("flv");//封装格式，如果是推送到rtmp就必须是flv封装格式
         recorder.setFrameRate(frameRate);
@@ -83,6 +81,6 @@ public class CameraDataPushHandler {
         // 录制流，这里的路径是绝对路径，存储视频文件
         recordCamera("c:\\output.flv",25);
         // RTMP推流，实时推送到客户端，使用H5等进行播放
-        //recordCamera("rtmp://192.168.30.21/live/record1",25);
+        recordCamera("rtmp://172.16.20.10:1935/live/test",25);
     }
 }
