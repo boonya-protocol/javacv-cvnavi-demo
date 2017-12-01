@@ -1,4 +1,4 @@
-package com.cvnavi.ffmpeg;
+package com.cvnavi.ffmpeg.sample;
 
 import java.io.File;
 import java.util.ArrayList;

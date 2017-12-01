@@ -4,19 +4,18 @@ import java.io.*;
 import java.util.Date;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.context.ContextLoader;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
- * @ClassName: UploadAndTransFileType
- * @Description: TODO(功能描述:http://blog.csdn.net/sunroyi666/article/details/68066480)
+ * @ClassName: UploadVideoUtil
+ * @Description: TODO(功能描述:文件上传并转换格式http://blog.csdn.net/sunroyi666/article/details/68066480)
  * @author: pengjunlin
  * @company: 上海势航网络科技有限公司
  * @date 2017-11-29
  */
-public class UploadAndTransFileType {
+public class UploadVideoUtil {
 
-    private static final Logger logger = LoggerFactory.getLogger(UploadAndTransFileType.class);
+    private static final Logger logger = LoggerFactory.getLogger(UploadVideoUtil.class);
 
     public static final String ROOT_PATH = "";//URL基础路径
 
