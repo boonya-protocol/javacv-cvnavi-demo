@@ -79,8 +79,8 @@ public class CameraDataPushHandler {
      */
     public static void main(String[] args) throws Exception, InterruptedException, org.bytedeco.javacv.FrameRecorder.Exception{
         // 录制流，这里的路径是绝对路径，存储视频文件
-        recordCamera("c:\\output.flv",25);
+        //recordCamera("c:\\output.flv",25);
         // RTMP推流，实时推送到客户端，使用H5等进行播放
-        recordCamera("rtmp://172.16.20.10:1935/live/test",25);
+        recordCamera("rtmp://172.16.20.10:1935/live",25);
     }
 }
